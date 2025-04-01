@@ -1,27 +1,36 @@
-# Stock Market Price Prediction using LSTMs
-### This project is a stock prediction website built using ReactJS for the frontend and Flask for the backend. The website fetches real-time stock data, preprocesses it using machine learning models, and predicts the next day's stock prices for multiple companies.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### Features
+## Getting Started
 
-- Stock Data Fetching: Retrieves stock data from the Polygon.io API.
+First, run the development server:
 
-- Data Preprocessing: Uses a single scaler for all models and applies transformations before feeding data into the models.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Machine Learning Models: LSTM-based neural networks for predicting stock price trends.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Automated Updates: Runs daily at 8 AM via Windows Task Scheduler to fetch new data, retrain models, and update predictions.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- Predictions API: Exposes an API endpoint for fetching predictions.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- ReactJS Frontend: Displays real-time stock prices and predictions.
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-### Automating Daily Predictions
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-#### To automate daily data fetching and model retraining at 8 AM, we use Windows Task Scheduler:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- Create a new task in Task Scheduler.
+## Deploy on Vercel
 
-- Set the trigger to run every day at 8:00 AM.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- Set the action to run a Python script
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
